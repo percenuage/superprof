@@ -1,0 +1,40 @@
+header{
+    width: 100%;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1{
+    padding:20px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+#board{
+    width: 600px;
+    margin: auto;
+}
+
+body{
+    background-image: url('src/images/pic/planetBackground.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#character1, #character2{
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: fantasy;
+    border: 2px white solid;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 5px;
+    /*border-style: dotted;*/
+}
+
+

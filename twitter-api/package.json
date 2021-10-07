@@ -1,0 +1,39 @@
+{
+  "name": "twitter-api",
+  "version": "1.0.0",
+  "description": "A simple Twitter API",
+  "main": "bin/server.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./server/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zyknafein92/twitter-api.git"
+  },
+  "author": "Zyknafein92",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zyknafein92/twitter-api/issues"
+  },
+  "homepage": "https://github.com/Zyknafein92/twitter-api#readme",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "body-parser": "1.18.3",
+    "dotenv": "7.0.0",
+    "express": "4.16.0",
+    "express-session": "1.16.1",
+    "mongoose": "5.5.0",
+    "morgan": "1.9.1",
+    "passport": "0.4.0",
+    "passport-local": "1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "nodemon": "1.18.9"
+  }
+}

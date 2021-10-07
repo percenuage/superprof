@@ -1,0 +1,61 @@
+<html>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>NBA Scores</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- MANIFEST -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <body>
+        <main>
+            <div class="center-align">
+                <h1>NBA App</h1>
+                <h4>The last NBA's matches</h4>
+            </div>
+
+            <table id="nba-scores" class="striped centered responsive-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Season</th>
+                        <th>Status</th>
+                        <th>Period</th>
+                        <th>Home Team</th>
+                        <th>Home Score</th>
+                        <th>Visitor Team</th>
+                        <th>Visitor Score</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr v-for="game in games">
+                        <td>{{game.date}}</td>
+                        <td>{{game.season}}</td>
+                        <td>{{game.status}}</td>
+                        <td>{{game.period}}</td>
+                        <td>{{game.home_team_name}}</td>
+                        <td>{{game.home_team_score}}</td>
+                        <td>{{game.visitor_team_name}}</td>
+                        <td>s{{game.visitor_team_score}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </main>
+
+        <!-- SCRIPTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
